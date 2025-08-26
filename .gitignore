@@ -12,7 +12,7 @@ dist/
 *.egg
 
 # User specified
-**/worldgen_crafter.py
+**/wordgen_crafter.py
 **/worldgenOLD.py
 **/run_random.py
 **/run_terrain.py
@@ -32,6 +32,8 @@ crafter/
 
 # Other
 mini_crafter_v2 copy 2/
+mini_crafter_old/
+# requirements/
 idea.txt
 test.py
 extract.py
