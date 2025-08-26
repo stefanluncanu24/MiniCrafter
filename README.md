@@ -2,6 +2,22 @@
 
 A compact and efficient reinforcement learning environment based on the original Crafter, designed for faster research and experimentation.
 
+
+<table>
+  <tr>
+    <td align="center">
+      <video src="https://github.com/user-attachments/assets/e14cac40-3288-4c66-85b8-d8bebfe59207" width="300" controls></video><br>
+      <b>MDP gameplay</b>
+    </td>
+    <td align="center">
+      <video src="https://github.com/user-attachments/assets/f85b5a02-ed70-4a5a-bd83-2462052eb46a" width="300" controls></video><br>
+      <b>POMDP gameplay</b>
+    </td>
+  </tr>
+</table>
+
+
+
 ## Key Features
 
 - **Two Modes:**
