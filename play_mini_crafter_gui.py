@@ -14,13 +14,13 @@ def main():
     print("Choose your Mini Crafter mode:")
     print("1. MDP Mode (9×9 world, fully observable, peaceful)")
     print("2. POMDP Mode (15×15 world, partially observable, peaceful)")
-    print("3. MDP Mode with monsters (9×9 world, fully observable)")
-    print("4. POMDP Mode with monsters (15×15 world, partially observable)")
-    print("5. Custom configuration")
+    # print("3. MDP Mode with monsters (9×9 world, fully observable)")
+    # print("4. POMDP Mode with monsters (15×15 world, partially observable)")
+    # print("5. Custom configuration")
     print()
     
     try:
-        choice = input("Enter your choice (1-5): ").strip()
+        choice = input("Enter your choice (1-2): ").strip()
         
         cmd_args = {}
         if choice == '1':
@@ -29,30 +29,30 @@ def main():
         elif choice == '2':
             cmd_args = {'mode': 'pomdp', 'peaceful': 'True'}
             print("Selected: POMDP Mode (15×15, partially observable, peaceful)")
-        elif choice == '3':
-            cmd_args = {'mode': 'mdp', 'peaceful': 'False'}
-            print("Selected: MDP Mode (9×9, fully observable, with monsters)")
-        elif choice == '4':
-            cmd_args = {'mode': 'pomdp', 'peaceful': 'False'}
-            print("Selected: POMDP Mode (15×15, partially observable, with monsters)")
-        elif choice == '5':
-            print("\nCustom Configuration:")
-            mode = input("Mode (mdp/pomdp) [mdp]: ").strip() or 'mdp'
-            peaceful = input("Peaceful mode (True/False) [True]: ").strip() or 'True'
-            worldgen = input("Worldgen module [mini_crafter.worldgen]: ").strip() or 'mini_crafter.worldgen'
-            cmd_args = {'mode': mode, 'peaceful': peaceful}
-            if worldgen != 'mini_crafter.worldgen':
-                cmd_args['worldgen'] = worldgen
+        # elif choice == '3':
+        #     cmd_args = {'mode': 'mdp', 'peaceful': 'False'}
+        #     print("Selected: MDP Mode (9×9, fully observable, with monsters)")
+        # elif choice == '4':
+        #     cmd_args = {'mode': 'pomdp', 'peaceful': 'False'}
+        #     print("Selected: POMDP Mode (15×15, partially observable, with monsters)")
+        # elif choice == '5':
+        #     print("\nCustom Configuration:")
+        #     mode = input("Mode (mdp/pomdp) [mdp]: ").strip() or 'mdp'
+        #     peaceful = input("Peaceful mode (True/False) [True]: ").strip() or 'True'
+        #     worldgen = input("Worldgen module [mini_crafter.worldgen]: ").strip() or 'mini_crafter.worldgen'
+        #     cmd_args = {'mode': mode, 'peaceful': peaceful}
+        #     if worldgen != 'mini_crafter.worldgen':
+        #         cmd_args['worldgen'] = worldgen
         else:
             print("Invalid choice. Exiting.")
             return
 
-        # Ask for layout if mode is MDP
-        if cmd_args.get('mode') == 'mdp':
-            print()
-            layout = input("Choose layout for MDP (default/full) [default]: ").strip().lower() or 'default'
-            if layout == 'full':
-                cmd_args['layout'] = 'full'
+        # # Ask for layout if mode is MDP
+        # if cmd_args.get('mode') == 'mdp':
+        #     print()
+        #     layout = input("Choose layout for MDP (default/full) [default]: ").strip().lower() or 'default'
+        #     if layout == 'full':
+        #         cmd_args['layout'] = 'full'
 
         # Ask about recording
         print()
