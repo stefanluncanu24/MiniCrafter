@@ -14,15 +14,11 @@ A compact and efficient reinforcement learning environment based on the original
 
 ## Installation
 
-1. **Install the package.** From inside the `mini_crafter_v2` directory, run:
-   ```bash
-   pip install -e .
-   ```
+Install the required packages with:
 
-2. **Install Pygame for the GUI:**
-   ```bash
-   pip install pygame
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 ## How to Play
 
