@@ -1,4 +1,4 @@
-# Mini Crafter
+# MiniCrafter
 
 A compact and efficient reinforcement learning environment based on the original Crafter, designed for faster research and experimentation.
 
