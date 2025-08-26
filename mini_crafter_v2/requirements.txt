@@ -1,8 +1,0 @@
-numpy
-pillow
-imageio
-imageio-ffmpeg
-ruamel.yaml
-opensimplex
-pygame
-gym
